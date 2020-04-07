@@ -10,7 +10,7 @@ body {
   display: flex;
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(to bottom, #009688 20vh, #d2dbdc 20vh);
+  background-image: linear-gradient(to bottom, #009688 15vh, #d2dbdc 15vh);
   background-repeat: no-repeat;
 }
 /* ******************************** CONTAINER CHAT ********* */
@@ -26,6 +26,7 @@ body {
 .container_chat_sx {
   height: 100%;
   width: 30%;
+  min-width: 355px;
   /* debug */
   background-color: blue;
 }
@@ -33,7 +34,7 @@ body {
 .container_chat_dx {
   height: 100%;
   width: 70%;
-
+  min-width: 300px;
   /* debug */
   background-color: red;
 }
@@ -46,11 +47,9 @@ body {
   justify-content: space-between;
   align-items: center;
   /* debug */
-  background-color: purple;
+  background-color: #e9ebeb;
 }
 .image_profilo_personale {
-  /* debug */
-  border: solid black 1px;
   height: 50px;
   width: 50px;
   padding-left: 7px;
@@ -71,8 +70,6 @@ img {
 
 /* ******************************** ICON ASSET PROFILO PERSONALE ********* */
 .icon_asset_pro_pers {
-  /* debug */
-  border: solid black 1px;
   height: 50px;
   width: 100px;
   display: flex;
@@ -107,8 +104,6 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* debug */
-  border: solid black 1px;
 }
 
 .text_notifiche h2 {
@@ -127,14 +122,12 @@ img {
   padding: 10px;
   display: flex;
   background-color: #fafafa;
-  /* debug */
-  border: solid black 1px;
 }
 .icon_search {
   height: 100%;
   width: 10%;
-  /* debug */
-  border: solid black 1px;
+  display: flex;
+  align-items: center;
 }
 .icon_search i {
   font-size: 20px;
@@ -144,8 +137,6 @@ img {
   height: 100%;
   width: 90%;
   display: flex;
-  /* debug */
-  border: solid black 1px;
 }
 .ricerca input {
   width: 100%;
@@ -162,10 +153,48 @@ img {
   height: 70px;
   width: 100%;
   padding-left: 10px;
-  border-top: solid black 1px;
+  border-top: solid rgb(224,224,224) 1px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* debug */
-  background-color: purple;
+  background-color: #ffffff;
+}
+.contatto_chat:hover {
+  background-color: #e9ebeb;
+}
+.contatto_chat img:hover {
+  height: 41px;
+  width: 41px;
+}
+/* ******************************** CONTAINER CONTATTI CHAT (NOME_ORA)********* */
+.container_text_contatti {
+  width: 80%;
+}
+
+.nome_ora {
+height: 50%;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.mess {
+  height: 50%;
+  width: 80%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#nome_contatto {
+  font-size: 16px;
+}
+#ora {
+  font-size: 11px;
+  padding-right: 10px;
+  color: #B6B9BB;
+}
+#anteprima_mess {
+  font-size: 13px;
+  color: #B6B9BB;
 }
