@@ -21,8 +21,6 @@ body {
   width: 70%;
   margin: 50px auto;
   display: flex;
-  /* debug */
-  background-color: green;
 }
 
 /* ******************************** CONTAINER SX ********* */
@@ -54,7 +52,7 @@ body {
   display: flex;
   justify-content: end;
   align-items: center;
-  background-color: #e9ebeb;
+  background-color: #e8ebe9;
 }
 
 .box1 {
