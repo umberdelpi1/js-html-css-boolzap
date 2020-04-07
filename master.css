@@ -27,8 +27,6 @@ body {
   height: 100%;
   width: 30%;
   min-width: 355px;
-  /* debug */
-  background-color: blue;
 }
 /* ******************************** CONTAINER DX ********* */
 .container_chat_dx {
@@ -36,7 +34,100 @@ body {
   width: 70%;
   min-width: 300px;
   /* debug */
-  background-color: red;
+  /* background-color: red; */
+}
+
+.contatto_attivo img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.contatto_attivo {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: #e9ebeb;
+}
+
+
+
+.box1 {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-left: 10px;
+  height: 70px;
+  width: 50%;
+  border-left: solid rgb(218,218,218) 1px;
+
+}
+
+
+.box2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* debug */
+  height: 70px;
+  width: 50%;
+}
+.icon_box2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30px;
+  width: 30%;
+}
+
+.icon_box2 i {
+  color: #b6b9bb;
+}
+
+.contatto_attivo img {
+  height:40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.text1 {
+  height: 40px;
+  width: 80%;
+  padding-left: 7px;
+}
+
+.text1 h2 {
+  font-size: 15px;
+}
+.text1 span {
+  font-size: 13px;
+}
+
+
+
+
+
+
+
+.chat {
+  height: calc(100% - 70px - 70px);
+  width: 100%;
+  background-image: url('img/asset 9.jpeg');
+}
+
+.invio_chat {
+  height: 70px;
+  width: 100%;
+  /* debug */
+  background-color: #e9ebeb;
+}
+
+.invio_chat {
+
+}
+
+.icon_asset_chat {
+
 }
 /* ******************************** BOX PROFILO PERSONALE ********* */
 
@@ -58,7 +149,7 @@ body {
   align-items: center;
 }
 /* ******************************** MISURA IMG ********* */
-img {
+.box_profilo_personale img {
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -79,6 +170,7 @@ img {
 .icon_asset_pro_pers i {
   color: #b6b9bb;
 }
+
 /* ******************************** BOX NOTIFICHE ********* */
 .box_notifiche {
   height: 70px;
@@ -114,6 +206,7 @@ img {
 .text_notifiche a {
   font-size: 10px;
   padding-left: 3px;
+  color: #4F7485;
 }
 /* ******************************** BOX INIZIA CHAT ********* */
 .box_inizia_chat {
@@ -146,11 +239,9 @@ img {
   height: calc(100% - 190px);
   width: 100%;
   overflow-y: scroll;
-  /* debug */
-  background-color: pink;
 }
 .contatto_chat {
-  height: 70px;
+  height: 71px;
   width: 100%;
   padding-left: 10px;
   border-top: solid rgb(224,224,224) 1px;
@@ -159,6 +250,12 @@ img {
   align-items: center;
   background-color: #ffffff;
 }
+.contatto_chat img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
 .contatto_chat:hover {
   background-color: #e9ebeb;
 }
@@ -191,10 +288,11 @@ align-items: center;
 }
 #ora {
   font-size: 11px;
-  padding-right: 10px;
+  padding-right: 15px;
   color: #B6B9BB;
 }
 #anteprima_mess {
   font-size: 13px;
   color: #B6B9BB;
 }
+/* ******************************** CONTAINER CHAT DX ********* */
