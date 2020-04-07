@@ -13,5 +13,27 @@ body {
 }
 
 .container_chat {
+  height: 80%;
+  width: 70%;
+  margin: 50px auto;
+  clear: both;
 
+  /* debug */
+  background-color: green;
+}
+
+.container_chat_sx {
+  height: 100%;
+  width: 30%;
+  float: left;
+
+  /* debug */
+  background-color: blue;
+}
+.container_chat_dx {
+  height: 100%;
+  width: 70%;
+  float: left;
+  /* debug */
+  background-color: red;
 }
