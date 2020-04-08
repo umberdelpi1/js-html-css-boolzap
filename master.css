@@ -131,8 +131,8 @@ body {
 
 /* ******************************** CHAT VERDE ********* */
 .chat_verde {
-  height: 50px;
-  width: 130px;
+  max-width: 50%;
+  padding: 25px;
   background-color: #D5F9BA;
   border-radius: 10px;
   display: flex;
@@ -146,8 +146,8 @@ body {
 
 /* ******************************** CHAT BIANCA ********* */
 .line_bianca {
-  height: 100px;
-  width: 100%;
+  max-width: 50%;
+  padding: 25px;
   padding-left: 50px;
   display: flex;
   justify-content: flex-start;
@@ -189,6 +189,9 @@ body {
   display: flex;
   align-items: center;
   margin-top: 10px;
+  border-radius: 30px;
+  padding-left: 20px;
+  font-size: 15px;
 }
 
 /* ******************************** START MESS ********* */
@@ -203,6 +206,10 @@ body {
   font-size: 25px;
   color: #6b7376;
 }
+.start_mess .fa-paper-plane {
+  display:none
+}
+
 
 /* ******************************** BOX PROFILO PERSONALE ********* */
 
