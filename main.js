@@ -20,7 +20,7 @@ $( document ).ready(function() {
   $(".esecuzione_mess input").focus(function(){
     microfono.hide();
     paperPlane.show();
-    // alert("Buona notte al secchio")
+    // alert("funziono???")
   });
   // eseguo lo show del paper plane
   $(".start_msg").blur(function(){
@@ -31,14 +31,15 @@ $( document ).ready(function() {
 
   iconaInvioMsg.click(
     function(){
-      var msg = inputUtenteMsg.val()
+      var msg = inputUtenteMsg.val();
+      var div = $('.container_cont_chat.active');
       // console.log(msg);
-      finestraChat.append('<div class="line_verde"><div class="chat_verde freccia"><div class="span1"><span>' + msg + '</span><span><i class="fa fa-chevron-down arrow"></i></span></div><div class="box"><span class="dlt">Cancella messaggio</span></div></div></div>')
+      div.find('.chat').append('<div class="line_verde"><div class="chat_verde freccia"><div class="span1"><span>' + msg + '</span><span><i class="fa fa-chevron-down arrow"></i></span></div><div class="box"><span class="dlt">Cancella messaggio</span></div></div></div>')
       inputUtenteMsg.val("")
 
       setTimeout(
         function(){
-          finestraChat.append('<div class="line_bianca"><div class="chat_bianca freccia"><div class="span1"><span><span>Ok ;-)</span><span><i class="fa fa-chevron-down arrow"></i></span></span></div><div class="box"><span class="dlt">Cancella messaggio</span></div></div></div>')
+          div.find('.chat').append('<div class="line_bianca"><div class="chat_bianca freccia"><div class="span1"><span><span>Ok ;-)</span><span><i class="fa fa-chevron-down arrow"></i></span></span></div><div class="box"><span class="dlt">Cancella messaggio</span></div></div></div>')
         },1000)
       }
 
@@ -90,14 +91,29 @@ $( document ).ready(function() {
 
    $('.chat').on("click",".dlt",
      function(){
-       $(this).parents(".freccia").remove();
-       console.log(this);
+       // $(this).parents(".freccia").html('<i class="fas fa-ban"></i> Questo messaggio è stato eliminato').css('background','rgba(120,120,120,.75)').css('color','white').css('font-size','10px');
+       // console.log(this);
+       $(this).parents(".freccia").html('<i class="fas fa-ban"></i> Questo messaggio è stato eliminato').addClass('msgcancellato');
      }
    )
 
 
 
 
+   $('.contatto_chat').click(
+     function(){
+
+       var data = $(this).data('conversazione');
+
+       $('.contatto_chat').removeClass('active');
+       $(this).addClass('active');
+       $('.container_cont_chat').removeClass('active');
+       $('.container_cont_chat').eq(data).addClass('active');
+     }
+   );
+
+
+});
 
 
 
@@ -112,25 +128,3 @@ $( document ).ready(function() {
 
  // Cancella messaggio: cliccando sul messaggio appare un menu a tendina che permette di cancellare il messaggio selezionato
    // son riuascito ad agganciarte l'evento sul "delete" potrò dirgli una roba tipo this.padre.cancella();
-   $('.right-messages').on("click", ".message",
-      function () {
-     //   alert("hai cliccato su di me!");
-       $(this).hide();
-      }
-
-   );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-});

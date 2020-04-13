@@ -38,6 +38,17 @@ body {
   /* debug */
   /* background-color: red; */
 }
+/* ******************************** BOX PER DIVIDERE ********* */
+.container_cont_chat {
+  display: none;
+}
+
+.container_cont_chat.active {
+  display: block;
+  height: calc(100% - 70px);
+  width: 100%;
+  min-width: 330px;
+}
 
 /* ******************************** CONTATTO ATTIVO ********* */
 .contatto_attivo img {
@@ -107,7 +118,7 @@ body {
 
 /* ******************************** CHAT ********* */
 .chat {
-  height: calc(100% - 70px - 70px);
+  height: calc(100% - 70px);
   width: 100%;
   background-image: url('img/asset 9.jpeg');
   overflow-y: scroll;
@@ -151,6 +162,8 @@ body {
 .freccia:hover .fa.fa-chevron-down {
   display: inline-block;
 }
+
+
 /* ******************************** OPZIONE MSG ********* */
 
 .box_opz_msg {
@@ -190,13 +203,19 @@ body {
 
 .chat_bianca {
   height: 50px;
-  width: 130px;
+  width: 70%;
   background-color: white;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+}
+/* ******************************** QUESTO MESS E' STATO ELIMINATO ********* */
+.msgcancellato{
+background-color: rgba(168,168,168,.55);
+font-size: 10px;
+color: white;
 }
 /* .box_opz_2 {
   display: flex;
