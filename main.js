@@ -23,10 +23,10 @@ $( document ).ready(function() {
     // alert("funziono???")
   });
   // eseguo lo show del paper plane
-  $(".start_msg").blur(function(){
+  $(".esecuzione_mess input").blur(function(){
       microfono.show();
       paperPlane.hide();
-    })
+  })
 
 
   iconaInvioMsg.click(
@@ -41,12 +41,12 @@ $( document ).ready(function() {
         function(){
           div.find('.chat').append('<div class="line_bianca"><div class="chat_bianca freccia"><div class="span1"><span><span>Ok ;-)</span><span><i class="fa fa-chevron-down arrow"></i></span></span></div><div class="box"><span class="dlt">Cancella messaggio</span></div></div></div>')
         },1000)
-      }
-
+    }
   )
 
   iniziaChat.keyup(
     function(){
+
       var textUser = iniziaChat.val().toLowerCase();
       console.log(textUser);
 
@@ -55,14 +55,9 @@ $( document ).ready(function() {
       contatti.each(
         function() {
           var nomeContatti = $(this).find('#nome_contatto').text().toLowerCase();
-
-
-
-
-
-          if (nomeContatti.includes(textUser)) {
+            if (nomeContatti.includes(textUser)) {
             $(this).show()
-          } else {
+            } else {
             $(this).hide()
           }
         }
@@ -83,25 +78,22 @@ $( document ).ready(function() {
   //   }
   // )
   $('.chat').on("click", ".arrow",
-     function () {
+    function () {
        $(this).parents('.span1').siblings('.box').toggle();
        console.log(this);
-     }
-   );
+    }
+  );
 
-   $('.chat').on("click",".dlt",
-     function(){
+  $('.chat').on("click",".dlt",
+    function(){
        // $(this).parents(".freccia").html('<i class="fas fa-ban"></i> Questo messaggio è stato eliminato').css('background','rgba(120,120,120,.75)').css('color','white').css('font-size','10px');
        // console.log(this);
        $(this).parents(".freccia").html('<i class="fas fa-ban"></i> Questo messaggio è stato eliminato').addClass('msgcancellato');
-     }
-   )
+    }
+  )
 
-
-
-
-   $('.contatto_chat').click(
-     function(){
+  $('.contatto_chat').click(
+    function(){
 
        var data = $(this).data('conversazione');
 
@@ -109,10 +101,8 @@ $( document ).ready(function() {
        $(this).addClass('active');
        $('.container_cont_chat').removeClass('active');
        $('.container_cont_chat').eq(data).addClass('active');
-     }
-   );
-
-
+    }
+  );
 });
 
 

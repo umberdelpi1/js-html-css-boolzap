@@ -38,6 +38,7 @@ body {
   /* debug */
   /* background-color: red; */
 }
+
 /* ******************************** BOX PER DIVIDERE ********* */
 .container_cont_chat {
   display: none;
@@ -84,6 +85,7 @@ body {
   height: 70px;
   width: 50%;
 }
+
 .icon_box2 {
   display: flex;
   justify-content: space-around;
@@ -101,6 +103,7 @@ body {
   width: 40px;
   border-radius: 50%;
 }
+
 .text1 {
   height: 40px;
   width: 80%;
@@ -111,6 +114,7 @@ body {
   font-size: 15px;
   font-weight: normal;
 }
+
 .text1 span {
   font-size: 13px;
   color: #B6B9BB;
@@ -151,6 +155,7 @@ body {
   align-items: center;
   position: relative;
 }
+
 .span1 span{
   font-size: 14px;
   font-weight: 500;
@@ -159,19 +164,20 @@ body {
 .fa.fa-chevron-down {
   display: none;
 }
+
 .freccia:hover .fa.fa-chevron-down {
   display: inline-block;
 }
 
 
 /* ******************************** OPZIONE MSG ********* */
-
 .box_opz_msg {
   width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
+
 .box {
   display: flex;
   flex-direction: column;
@@ -189,7 +195,6 @@ body {
   box-shadow: 0px 0px 30px 0px rgba(149,149,149,.87);
   display: none;
 }
-
 
 /* ******************************** CHAT BIANCA ********* */
 .line_bianca {
@@ -211,32 +216,15 @@ body {
   align-items: center;
   position: relative;
 }
+
 /* ******************************** QUESTO MESS E' STATO ELIMINATO ********* */
 .msgcancellato{
 background-color: rgba(168,168,168,.55);
 font-size: 10px;
 color: white;
 }
-/* .box_opz_2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  height: 40px;
-  width: 170px;
-  margin-right: 50px;
-  background-color: white;
-  position: absolute;
-  top: 47px;
-  z-index: 10;
-  border-radius: 7px;
-  box-shadow: 0px 0px 30px 0px rgba(149,149,149,.87);
-  display: none;
-} */
 
 /* ******************************** INVIO CHAT ********* */
-
 .icon_emoji {
   height: 70px;
   width: 15%;
@@ -244,10 +232,12 @@ color: white;
   justify-content: center;
   align-items: center;
 }
+
 .icon_emoji i {
   font-size: 25px;
   color: #6b7376;
 }
+
 /* ******************************** ESECUZIONE MESS ********* */
 .esecuzione_mess {
   height: 70px;
@@ -274,17 +264,17 @@ color: white;
   justify-content: center;
   align-items: center;
 }
+
 .start_mess i {
   font-size: 25px;
   color: #6b7376;
 }
+
 .start_mess .fa-paper-plane {
   display:none
 }
 
-
 /* ******************************** BOX PROFILO PERSONALE ********* */
-
 .box_profilo_personale {
   height: 70px;
   width: 100%;
@@ -294,6 +284,7 @@ color: white;
   /* debug */
   background-color: #e9ebeb;
 }
+
 .image_profilo_personale {
   height: 50px;
   width: 50px;
@@ -302,12 +293,14 @@ color: white;
   justify-content: center;
   align-items: center;
 }
+
 /* ******************************** MISURA IMG ********* */
 .box_profilo_personale img {
   height: 40px;
   width: 40px;
   border-radius: 50%;
 }
+
 .image_profilo_personale img:hover {
   height: 41px;
   width: 41px;
@@ -321,6 +314,7 @@ color: white;
   justify-content: space-around;
   align-items: center;
 }
+
 .icon_asset_pro_pers i {
   color: #b6b9bb;
 }
@@ -335,14 +329,17 @@ color: white;
   /* debug */
   background-color: #8edafc;
 }
+
 .box_notifiche img {
   height: 54px;
   width: 54px;
 }
+
 .box_notifiche img:hover {
   height: 56px;
   width: 56px;
 }
+
 /* ******************************** TEXT NOTIFICHE ********* */
 .text_notifiche {
   height: 100%;
@@ -357,11 +354,13 @@ color: white;
   font-size: 13px;
   padding-left: 3px;
 }
+
 .text_notifiche a {
   font-size: 10px;
   padding-left: 3px;
   color: #4F7485;
 }
+
 /* ******************************** BOX INIZIA CHAT ********* */
 .box_inizia_chat {
   height: 50px;
@@ -370,30 +369,36 @@ color: white;
   display: flex;
   background-color: #fafafa;
 }
+
 .icon_search {
   height: 100%;
   width: 10%;
   display: flex;
   align-items: center;
 }
+
 .icon_search i {
   font-size: 20px;
   color: #b6b9bb;
 }
+
 .ricerca {
   height: 100%;
   width: 90%;
   display: flex;
 }
+
 .ricerca input {
   width: 100%;
 }
+
 /* ******************************** CONTAINER CONTATTI CHAT ********* */
 .container_contatti_chat {
   height: calc(100% - 190px);
   width: 100%;
   overflow-y: scroll;
 }
+
 .contatto_chat {
   height: 71px;
   width: 100%;
@@ -404,6 +409,7 @@ color: white;
   align-items: center;
   background-color: #ffffff;
 }
+
 .contatto_chat img {
   height: 40px;
   width: 40px;
@@ -417,6 +423,7 @@ color: white;
   height: 41px;
   width: 41px;
 }
+
 /* ******************************** CONTAINER CONTATTI CHAT (NOME_ORA)********* */
 .container_text_contatti {
   width: 80%;
@@ -440,11 +447,13 @@ align-items: center;
 #nome_contatto {
   font-size: 16px;
 }
+
 #ora {
   font-size: 11px;
   padding-right: 15px;
   color: #B6B9BB;
 }
+
 #anteprima_mess {
   font-size: 13px;
   color: #B6B9BB;
