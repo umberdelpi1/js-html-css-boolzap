@@ -38,7 +38,7 @@ $( document ).ready(function() {
       var source = $('#msg-template').html();
       var template = Handlebars.compile(source);
 
-      var context = { "msg": msg };
+      var context = { "msg": msg, "line": "line_verde" };
       var html = template(context);
 
 
@@ -48,11 +48,15 @@ $( document ).ready(function() {
 
       setTimeout(
         function(){
-          div.find('.chat').append('<div class="line_bianca"><div class="chat_bianca freccia"><div class="span1"><span><span>Ok ;-)</span><span><i class="fa fa-chevron-down arrow"></i></span></span></div><div class="box"><span class="dlt">Cancella messaggio</span></div></div></div>')
+          var msg = "ok !";
+          var context = { "msg": msg, "line": "line_bianca" };
+          var html = template(context);
+
+          div.find('.chat').append(html);
         },1000)
     }
   )
-
+// ******************************************HANDLEBARS FINE
   iniziaChat.keyup(
     function(){
 
