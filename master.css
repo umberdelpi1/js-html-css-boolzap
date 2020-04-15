@@ -424,6 +424,10 @@ color: white;
   width: 41px;
 }
 
+.contatto_chat:active {
+  background-color: rgba(200,200,200,.41);
+}
+
 /* ******************************** CONTAINER CONTATTI CHAT (NOME_ORA)********* */
 .container_text_contatti {
   width: 80%;

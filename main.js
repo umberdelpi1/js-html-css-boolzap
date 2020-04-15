@@ -33,9 +33,18 @@ $( document ).ready(function() {
     function(){
       var msg = inputUtenteMsg.val();
       var div = $('.container_cont_chat.active');
+
+      // ******************************************HANDLEBARS INIZIO
+      var source = $('#msg-template').html();
+      var template = Handlebars.compile(source);
+
+      var context = { "msg": msg };
+      var html = template(context);
+
+
       // console.log(msg);
-      div.find('.chat').append('<div class="line_verde"><div class="chat_verde freccia"><div class="span1"><span>' + msg + '</span><span><i class="fa fa-chevron-down arrow"></i></span></div><div class="box"><span class="dlt">Cancella messaggio</span></div></div></div>')
-      inputUtenteMsg.val("")
+      div.find('.chat').append(html);
+      inputUtenteMsg.val("");
 
       setTimeout(
         function(){
